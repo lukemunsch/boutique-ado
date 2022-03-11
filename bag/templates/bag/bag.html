@@ -41,7 +41,8 @@
                         </td>
                         <td class="p-3">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 text-muted small">Sku: {{ item.products.sku|upper }}</p>
+                            <p class="my-auto"><strong>Size:</strong>{% if product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                            <p class="my-0 text-muted small">Sku: {{ item.product.sku|upper }}</p>
                         </td>
                         <td class="p-3">
                             <p class="my-0">${{ item.product.price }}</p>
