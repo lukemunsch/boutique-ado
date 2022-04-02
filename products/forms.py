@@ -2,7 +2,7 @@ from django import forms
 from .models import Product, Category
 
 
-class ProductForm(froms.ModelForm):
+class ProductForm(forms.ModelForm):
     """set up our admin product form for new objects"""
     class Meta:
         model = Product
